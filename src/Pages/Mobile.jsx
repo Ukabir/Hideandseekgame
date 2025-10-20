@@ -23,8 +23,8 @@ const GameCanvas_v12 = () => {
   // Generate obstacles once
   const generateObstacles = (count, canvasWidth, canvasHeight) => {
     const obstacles = [];
-    const minLength = 100;
-    const maxLength = 250;
+    const minLength = 50;
+    const maxLength = 120;
     const thickness = 10;
     const minDistance = 50;
 
@@ -67,7 +67,7 @@ const GameCanvas_v12 = () => {
     return obstacles;
   };
 
-  const obstaclesRef = useRef(generateObstacles(12, dimensions.width, dimensions.height));
+  const obstaclesRef = useRef(generateObstacles(7, dimensions.width, dimensions.height));
 
   // Helper: generate safe spawn position (not inside obstacle or walls)
   const getSafeSpawn = (radius, width, height, obstacles) => {
