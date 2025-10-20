@@ -11,10 +11,11 @@ import GameCanvas_v8 from "./Pages/Version8";
 import GameCanvas_v9 from "./Pages/Version9";
 import GameCanvas_v10 from "./Pages/Version10";
 import GameCanvas_v11 from "./Pages/FinalVersion";
+import GameCanvas_v12 from "./Pages/Mobile";
 
 const Home = () => {
   const navigate = useNavigate();
-  const versions = Array.from({ length: 11 }, (_, i) => i + 1);
+  const versions = Array.from({ length: 12 }, (_, i) => i + 1);
 
   return (
     <div className="d-flex flex-column align-items-center justify-content-center vh-100 text-center">
@@ -48,8 +49,9 @@ function App() {
       : 
       <button className="btn btn-secondary" onClick={() => navigate("/")}>
         ⬅ Back to Versions
-      </button>  
-    }
+      </button>
+}  
+      <h3>Only Version 12 for mobile</h3>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/v1" element={<GameCanvas_v1 width={canvasWidth} height={canvasHeight} />} />
@@ -63,6 +65,7 @@ function App() {
         <Route path="/v9" element={<GameCanvas_v9 width={canvasWidth} height={canvasHeight} />} />
         <Route path="/v10" element={<GameCanvas_v10 width={canvasWidth} height={canvasHeight} />} />
         <Route path="/v11" element={<GameCanvas_v11 width={canvasWidth} height={canvasHeight} />} />
+        <Route path="/v12" element={<GameCanvas_v12 width={canvasWidth} height={canvasHeight} />} />
       </Routes>
     </div>
   );

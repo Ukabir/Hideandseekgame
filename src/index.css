@@ -1,0 +1,31 @@
+.mobile-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  z-index: 1000;
+}
+
+.mobile-controls .mid {
+  display: flex;
+  gap: 5px;
+}
+
+.mobile-controls .btn {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  transition: background 0.2s;
+}
+
+.mobile-controls .btn:active {
+  background: rgba(255, 255, 255, 0.3);
+}
