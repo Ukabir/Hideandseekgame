@@ -45,13 +45,12 @@ function App() {
   return (
     <div className="d-flex flex-column align-items-center justify-content-center">
       {paths ?
-        ""
+        <h3>Only Version 12 for mobile</h3>
       : 
       <button className="btn btn-secondary" onClick={() => navigate("/")}>
         ⬅ Back to Versions
       </button>
 }  
-      <h3>Only Version 12 for mobile</h3>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/v1" element={<GameCanvas_v1 width={canvasWidth} height={canvasHeight} />} />
