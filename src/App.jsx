@@ -20,6 +20,7 @@ const Home = () => {
   return (
     <div className="d-flex flex-column align-items-center justify-content-center vh-100 text-center">
       <h1 className="mb-4">🎮 Hide And Seek</h1>
+      <h3 className="mb-4">For any suggestions or fixes check my <a href="https://kaytee-portfolio.vercel.app/" target="_blank">portfolio</a> and send a message</h3>
       <p>Select a version to play:</p>
       <div className="d-flex flex-wrap justify-content-center gap-3 mt-3">
         {versions.map((version) => (
